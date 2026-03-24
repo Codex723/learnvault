@@ -16,7 +16,7 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: async (_req, _file) => ({
-    folder: "naxxa-store",
+    folder: "your-folder-name", // Change this to the desired folder in Cloudinary
     allowed_formats: ["jpg", "png", "jpeg"],
   }),
 });
